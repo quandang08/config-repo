@@ -1,0 +1,18 @@
+server:
+  port: 8888  # 🔹 Cổng chạy Config Server
+
+spring:
+  application:
+    name: config-server
+
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/quandang08/config-repo.git  # 🔹 Thay bằng repo GitHub của bạn
+          default-label: main  # 🔹 Nhánh mặc định
+          clone-on-start: true  # 🔹 Tự động clone repo khi khởi động
+
+        # 🔹 Chế độ native (chỉ dùng khi không dùng Git)
+        native:
+          search-locations: classpath:/config
