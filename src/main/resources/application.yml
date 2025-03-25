@@ -9,7 +9,7 @@ spring:
     config:
       server:
         git:
-          uri: https://github.com/quandang08/config-repo.git  # 🔹 Thay bằng repo GitHub của bạn
+          uri: https://github.com/quandang08/config-repo.git
           default-label: main  # 🔹 Nhánh mặc định
           clone-on-start: true  # 🔹 Tự động clone repo khi khởi động
 
