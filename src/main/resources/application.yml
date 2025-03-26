@@ -2,9 +2,10 @@ server:
   port: 8888  # 🔹 Cổng chạy Config Server
 
 spring:
+  profiles:
+    active: native
   application:
     name: config-server
-
   cloud:
     config:
       server:
@@ -15,4 +16,4 @@ spring:
 
         # 🔹 Chế độ native (chỉ dùng khi không dùng Git)
         native:
-          search-locations: classpath:/config
+          search-locations: classpath:/configurations
