@@ -28,6 +28,9 @@ management:
   endpoint:
     gateway:
       access: read_only
+  tracing:
+    sampling:
+      probability: 1.0
 
 eureka:
   client:

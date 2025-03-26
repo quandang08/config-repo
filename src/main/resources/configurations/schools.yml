@@ -13,7 +13,10 @@ spring:
       ddl-auto: create
     database: postgresql
     database-platform: org.hibernate.dialect.PostgreSQLDialect
-
+management:
+  tracing:
+    sampling:
+      probability: 1.0
 eureka:
   client:
     service-url:
